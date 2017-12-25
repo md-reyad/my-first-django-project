@@ -1,0 +1,19 @@
+{% extends "./base.html" %}
+{% block content %}
+    <table class="table">
+    <thead>
+    <th>Serial</th>
+    <th>Title</th>
+    <th>Description</th>
+    </thead>
+  
+   {% for foo in book %}
+    <tr>
+        <td>{{ foo.id }}</td>
+        <td>{{ foo.title }}</td>
+        <td>{{ foo.description }}</td>
+    </tr>
+    {% endfor %}
+    </table>
+
+{% endblock content %}

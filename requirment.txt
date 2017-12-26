@@ -1,5 +1,4 @@
 Django==2.0
-modern-package-template==1.0
 Paste==2.0.3
 PasteDeploy==1.5.2
 PasteScript==2.0.2

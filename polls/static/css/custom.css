@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+.banner-text{
+  font-size: 35px;
+  padding-bottom: 20px;
+}
+.banner-text p{
+  line-height: 40px;
+}
+.banner-text .english{
+  font-size: 29.5px;
+}
+.last_menu{
+  border:none !important;
+}
+.main-menu a, .main-menu li.active .sub-menu a, .main-menu li ul li::before,.responsive_menu a:hover {
+  color: #FFF;
+  font-weight: normal;
+}
+.main_wrapper p{
+  text-align: justify;
+  font-size: 14px;
+}

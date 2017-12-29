@@ -1,18 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <title>Darogahat Alim Madrasah</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="College Education Responsive Template"/>
+    <meta name="author" content="Esmet"/>
+    <meta charset="UTF-8"/>
+    <!-- CSS Bootstrap & Custom -->
+    {% load static %}
+    <link rel="stylesheet" media="screen" type="text/css" href="{% static 'css/bootstrap.css' %}"/>
+    <link rel="stylesheet" media="screen" type="text/css" href="{% static 'css/font-awesome.min.css' %}"/>
+    <link rel="stylesheet" media="screen" type="text/css" href="{% static 'css/animate.css' %}"/>
+    <link rel="stylesheet" media="screen" type="text/css" href="{% static 'css/animate.css' %}"/>
+    <link rel="stylesheet" media="screen" type="text/css" href="{% static 'css/misc.css' %}"/>
+    <link rel="stylesheet" media="screen" type="text/css" href="{% static 'css/main.css' %}"/>
+    <link rel="stylesheet" media="screen" type="text/css" href="{% static 'css/color-scheme.css' %}"/>
+    <link rel="stylesheet" media="screen" type="text/css" href="{% static 'css/responsive.css' %}"/>
+    <link rel="stylesheet" media="screen" type="text/css" href="{% static 'css/custom.css' %}"/>
+
+    <!-- JavaScripts -->
+    <script src="{% static 'js/jquery-1.11.2.min.js' %}"></script>
+    <script src="{% static 'js/modernizr.js' %}"></script>
 </head>
 <body>
-<h1 class="text-danger">My First Django Project</h1>
+
+<div class="container-fluid">
+  <div class="responsive-navigation visible-sm visible-xs">
+    <a href="#" class="menu-toggle-btn">
+        <i class="fa fa-bars"></i>
+    </a>
+
+    <div class="responsive_menu">
+        <ul class="main_menu">
+            <li class="active"><a href="index-2.html">প্রথম পাতা</a></li>
+            <li><a href="acadamic_history.html">প্রতিষ্ঠানের ইতিহাস</a></li>
+            <li><a href="teacher.html">শিক্ষক বৃন্দ</a>
+    <ul>
+                    <li><a href="#">ছাত্র-ছাত্রীর তথ্য</a></li>
+                    <li><a href="strup.html">কর্মচারী</a></li>
+                </ul>
+            </li>
+            <li><a href="comati.html">প্রতিষ্ঠাতা ও ম্যানেজিং কমিটি</a></li>
+            <li><a href="student_information.html">ছাত্র-ছাত্রী </a>
+                <ul>
+                    <li><a href="#">ছাত্র-ছাত্রীর তথ্য</a></li>
+                    <li><a href="strup.html">কর্মচারী</a></li>
+                </ul>
+            </li>
+            <li class="last_menu"><a href="height_lable.html">মেধাবী ছাত্র   ছাত্রী </a></li>
+            <li><a href="result.html">অভ্যন্তরিণ ফলাফল</a></li>
+
+            <li class="last_menu"><a href="map.html">যোগাযোগ ও ম্যাপ</a></li>
+
+        </ul> <!-- /.main_menu -->
+        <ul class="social_icons">
+            <li><a href="http://facebook.com/"target="black"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/"target="black"><i class="fa fa-twitter"></i></a></li>
+            <li><i class="fa fa-pinterest"></i></li>
+            <li><a href="https://plus.google.com/"target="black"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+        </ul> <!-- /.social_icons -->
+    </div> <!-- /.responsive_menu -->
+</div>
+<header class="site-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 header-left">
+                <div class="logo col-md-2">
+                    <a href="index-2.html" title="Universe" rel="home">
+                        <img src="{% static "images/download.png" %}" alt="Logo" height="100"/>
+                    </a>
+
+                </div> <!-- /.logo -->
+                <div class="col-md-10 banner-text">
+                    <span>
+                        <p class="bangla" style="margin: 0px 120px 0px">দৌলতপুর ছালামতিয়া আলিম মাদ্রাসা</p>
+                        <p class="english responsive-navigation visible-lg" style="margin: 0px 220px 0px;font-size: 20px">FENI SADAR,FENI. EIIN : 106631</p>
+                    </span>
+                </div>
+            </div> <!-- /.header-left -->
+
+        </div>
+    </div> <!-- /.container -->
+
+    <div class="nav-bar-main" role="navigation">
+        <div class="container">
+            <nav class="main-navigation clearfix visible-md visible-lg" role="navigation">
+                <ul class="main-menu sf-menu">
+                    <li class="active"><a href="index-2.html">প্রথম পাতা</a></li>
+                    <li><a href="acadamic_history">প্রতিষ্ঠানের ইতিহাস</a></li>
+                    <li><a href="#">শিক্ষক বৃন্দ</a>
+                     <ul>
+                         <li><a href="teacher.html">শিক্ষক বৃন্দ</a></li>
+                            <li><a href="strup.html">কর্মচারী</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="comati.html">প্রতিষ্ঠাতা ও ম্যানেজিং কমিটি</a></li>
+                    <li><a href="#">ছাত্র-ছাত্রী </a>
+                        <ul>
+                            <li><a href="student_information.html">ছাত্র-ছাত্রীর তথ্য</a></li>
+                            <li><a href="height_lable.html">মেধাবী ছাত্র   ছাত্রী </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="picture.html">ছবি এবং অনন্য</a></li>
+                    <li><a href="result.html">অভ্যন্তরিণ ফলাফল</a></li>
+                    <li class="last_menu"><a href="map.html">যোগাযোগ </a></li>
+                </ul>
+
+            </nav> <!-- /.main-navigation -->
+        </div> <!-- /.container -->
+    </div> <!-- /.nav-bar-main -->
+
+</header>
+<div style="margin-top: 20px;min-height: 500px;">
 {% block content %}
 
 {% endblock %}
+</div>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget-title">Contact Us</h4>
+                        <p>Mailing address:obydulhaque960@gmail.com</br>Offlice Address<br/> Dhaka, 2016</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget-title">ফেণী জেলা</h4>
+                        <ul class="list-links">
+                            <li><a href="https://bn.wikipedia.org/wiki/" target="black">ফেণী জেলা সম্পর্কিত </a></li>
+                            <li><a href="http://www.feni.gov.bd/node/498715/" target="black">এক-নজরে-ফেনী</a></li>
+                            <li><a href="http://www.feni.gov.bd/education-institutes" target="black">ফেণী জেলার শিক্ষা
+                                প্রতিষ্ঠান</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget-title">অন্যান্য ই-সেবা</h4>
+                        <ul class="list-links">
+                            <li><a href="https://www.teachers.gov.bd/" target="black">শিক্ষক বাতায়ন </a></li>
+                            <li><a href="http://services.portal.gov.bd/" target="black">সেবাকুঞ্জ </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget-title">গুরুত্বপূর্ণ লিংকস</h4>
+                        <ul class="list-links">
+                            <li><a href="http://bdlaws.minlaw.gov.bd/bangla_all_sections.php?id=950" target="black">তথ্য
+                                প্রযুক্তি আইন </a></li>
+                            <li><a href="http://bdlaws.minlaw.gov.bd/bangla_pdf_part.php?id=1011" target="black">তথ্য
+                                অধিকার আইন</a></li>
+                            <li><a href="http://bdlaws.minlaw.gov.bd/" target="black">অন্যান্য আইন</a></li>
+                            <li><a href="http://www.brahmanbaria.gov.bd/node/1345919" target="black">সচিবালয়
+                                নির্দেশমালা ২০১৪</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-widget">
+                        <ul class="footer-media-icons">
+                            <li><a href="http://facebook.com/" target="black" class="fa fa-facebook"></a></li>
+                            <li><a href="https://twitter.com/" target="black" class="fa fa-twitter"></a></li>
+                            <li><a href="https://plus.google.com/" target="black" class="fa fa-google-plus"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> <!-- /.row -->
+            <div class="bottom-footer">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-7">
+                        <p class="small-text">&copy; Copyright 2015-2016. Designed & Developed by Obydul
+                            Haque(Saddam).</p>
+                    </div> <!-- /.col-md-5 -->
+                    <div class="col-md-3">
+                        <ul class="footer-nav">
+                            <li><a href="index-2.html">Home</a></li>
+                        </ul>
+                    </div>
 
+                    <!-- /.col-md-7 -->
+                </div> <!-- /.row -->
+            </div> <!-- /.bottom-footer -->
 
+        </div>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/plugins.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/jquery.bootstrap.newsbox.min.js' %}"></script>
+</body>
 </body>
 </html>

@@ -2,25 +2,251 @@
 
 
 {% block content %}
+    {% load static %}
+    <!-- /.site-header -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="main-slideshow">
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li style="height: 400px">
 
-     <li><a href="/">Home</a></li>
-            <li><a href="/blog/">Blog</a></li>
+                                <img style=" height: 100%;width: 100%" src={% static "admin/slider_image/4.jpg" %}>
+                                <div class="slider-caption">
 
-<div class="container">
-  <h2>Vertical (basic) form</h2>
-  <form action="/polls/form" method="POST">
-      {% csrf_token %}
-    <div class="form-group">
-      <label for="email">NAME:</label>
-      <input type="text" class="form-control" id="email" placeholder="Enter email" value="{{ title }}" name="title">
+                                    <!--  <h2>Caption Of Slider</h2> -->
+                                    <p>Dhalia high school</p>
+                                </div>
+                            </li>
+                            <li style="height: 400px">
+                                <img style=" height: 100%;width: 100%" src={% static "admin/slider_image/3.jpg" %}>
+                                <div class="slider-caption">
+
+                                    <!--  <h2>Caption Of Slider</h2> -->
+                                    <p>Dhalia high school</p>
+                                </div>
+                            </li>
+                            <li style="height: 400px">
+                                <img style=" height: 100%;width: 100%" src={% static "admin/slider_image/2.jpg" %}>
+                                <div class="slider-caption">
+
+                                    <!--  <h2>Caption Of Slider</h2> -->
+                                    <p>Dhalia high school</p>
+                                </div>
+                            </li>
+                            <li style="height: 400px">
+                                <img style=" height: 100%;width: 100%" src={% static "admin/slider_image/1.jpg" %}>
+                                <div class="slider-caption">
+
+                                    <!--  <h2>Caption Of Slider</h2> -->
+                                    <p>Dhalia high school</p>
+                                </div>
+                            </li>
+
+                        </ul> <!-- /.slides -->
+                    </div> <!-- /.flexslider -->
+                </div> <!-- /.main-slideshow -->
+            </div> <!-- /.col-md-12 -->
+            <div class="col-md-4">
+                <div class="widget-main">
+                    <div class="widget-inner">
+                        <div class="prof-list-item clearfix">
+                            <div class="prof-thumb">
+
+                                <img style=" height: 100%;width: 100%" alt="মো:আবদুল আউয়াল ভূঞা" src={% static "admin/headteacher_image/2.jpg" %}>
+                            </div> <!-- /.prof-thumb -->
+                            <div class="prof-details">
+                                <h5 class="prof-name-list">অধ্যক্ষ: মো:আবদুল আউয়াল ভূঞা pp</h5>
+                                <p class="small-text">এম.কম(চট্রগ্রাম বিশ্ববিদ্যালয়), কামিল (মাদ্রাসা বোড)</p>
+                            </div> <!-- /.prof-details -->
+                        </div> <!-- /.prof-list-item -->
+                        <div class="prof-list-item clearfix">
+                            <div class="prof-thumb">
+                                <img src="images/prof/prof1.jpg" alt="Profesor Name"/>
+                            </div> <!-- /.prof-thumb -->
+                            <div class="prof-details">
+                                <h5 class="prof-name-list">মাদ্রাসার লক্ষ্য ও উদ্দেশ্য </h5>
+                                <p class="small-text">আমাদের লক্ষ্য মহান আল্লাহর সন্তুষ্টি অর্জনে জাতীকে ইসলামী শিক্ষা ও
+                                    সাধারণ শিক্ষার সমম্বয়ে তাহজীব তামাদ্দুন সমৃদ্ধ নৈতিক চরিত্রবান, শারিরিক ও মানষিক
+                                    গুণাবলী স¤পন্ন একটি ভবিষ্যত প্রজন্ম উপহার দেওয়া। ছাত্র/ছাত্রীদেরেক তথ্য প্রযুক্তিতে
+                                    দক্ষ করে তোলা। ক্রমান্বয়ে সকল শ্রেণীকার্যক্রম মাল্টিমিডিয়া ক্লাসের আওতায় নিয়ে
+                                    আসা।ছাত্র/ছাত্রীরা যাতে যথাযথ পাঠদানের মাধ্যমে দক্ষ ও যুগোপোযোগী হয়ে দক্ষ জনশক্তিতে
+                                    রুপান্তিরত হতে পারে সে লক্ষে শিক্ষা কার্যক্রম পরিচালনা করা। তাছাড়া যুগের
+                                    চাহিদানুযায়ী মাদ্রাসায় বিজ্ঞান বিভাগ চালু করা </p>
+                            </div> <!-- /.prof-details -->
+                        </div> <!-- /.prof-list-item -->
+                    </div> <!-- /.prof-list-item -->
+                </div> <!-- /.widget-inner -->
+            </div> <!-- /.widget-main -->
+
+        </div>
+
     </div>
-    <div class="form-group">
-      <label for="pwd">Discription:</label>
-      <input type="text" class="form-control" id="pwd" placeholder="Enter Des" name="description" value="{{ description }}">
     </div>
-    <div class="checkbox">
-      <label><input type="checkbox" name="remember"> Remember me</label>
+    <div class="container main_wrapper">
+        <div class="row">
+            <!-- Here begin Main Content -->
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="widget-item">
+                            <h2 class="welcome-text">স্বাগতম</h2>
+                            <p>
+                            <p>
+                            <h1><b><i>আমাদের &nbsp;</i></b>মাদ্ররাসার&nbsp;<b><i>ওয়েব সাইটে আপনাকে স্বাগতম</i></b>
+                            </h1>                        </p>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="widget-item" style="height: 300px">
+                                <h2 class="welcome-text">প্রধান শিক্ষকের বাণী</h2>
+                                <p>
+                                    <span>বর্তমান বিশ্ব প্রযুক্তি নির্ভর বিশ্ব। বিশ্বায়নের চ্যালেঞ্জ মোকাবেলায় পুরো বিশ্ব এখন ভার্চুয়াল জগতে প্রবেশ করেছে।&nbsp;তারই ধারাবাহিকতায় ফেনী জেলার স্বনামধন্য শিক্ষা প্রতিষ্ঠান ধলিয়া উচ্চ বিদ্যালয় তথ্যের অবাধ প্রবাহ নিশ্চিত করার লক্ষ্যে একটি ওয়েবসাইট খুলেছে।&nbsp;মূলত শিক্ষক, শিক্ষার্থী এবং অভিভাবক এই তিন অনুসঙ্গের
+                                </p>
+
+                                <p>
+
+                                    <a href="pricenpal_notices0b30.html?id=2" class="btn btn-success">see more</a>
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-6">
+                            <div class="widget-item" style="height: 300px">
+                                <h2 class="welcome-text">সভাপতির বাণী</h2>
+                                <p>
+                                    একবিংশ শতাব্দীর চ্যালেঞ্জ মোকাবিলায় গণপ্রজাতন্ত্রী বাংলাদেশ সরকারের ঘোষিত রুপকল্প
+                                    ২০২১ বাস্তবায়নের লক্ষ্যে ঘোষিত ডিজিটাল বাংলাদেশ গড়ার স্বপ্ন নিয়ে&nbsp;ধলিয়া উচ্চ
+                                    বিদ্যালয় ডায়নামিক ওয়েবসাইট স্থাপন নিঃসন্দেহে একটি যুগোপযোগী পদক্ষেপ।<br>প্রধান
+                                    শিক্ষক সহ যারা এ প্রকল্প বাস্তবায়নের সাথে সংযুক্ত তাদের সবার প্রতি রইল আমার <a
+                                        href="pracident_post_readd708.html?id=3" class="btn btn-success">See more</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6" style="float: left;">
+                            <div class="widget-item" style="height: 300px">
+                                <h2 class="welcome-text">অর্জন</h2>
+                                <p>বিগত ৫ বছরে সকল পাবিলক পরীক্ষায় ৯৫% শিক্ষার্থী কৃতকার্য হয়। ২০১১ সালে পাবলিক পরীক্ষায়
+                                    মোট ৪ জন শিক্ষার্থী শিক্ষা বৃত্তি অর্জন করে। তাছাড়া অভ্যন্তরীন সব পরীক্ষায়
+                                    ছাত্র/ছাত্রীরা প্রায় শতভাগ কৃতকার্য হয়।
+                                </p>
+                                <h3 class="welcome-text">প্রতিষ্ঠাকাল</h3>
+                                <p>০১/০১/১৯৫০ইং </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="widget-item" style="height: 300px">
+                                <h2 class="welcome-text">ভবিষৎ পরিকল্পনা</h2>
+                                <p>
+                                    ছাত্র/ছাত্রীদেরেক তথ্য প্রযুক্তিতে দক্ষ করে তোলা। ক্রমান্বয়ে সকল শ্রেণীকার্যক্রম
+                                    মাল্টিমিডিয়া ক্লাসের আওতায় নিয়ে আসা।ছাত্র/ছাত্রীরা যাতে যথাযথ পাঠদানের মাধ্যমে দক্ষ
+                                    ও যুগোপোযোগী হয়ে দক্ষ জনশক্তিতে রুপান্তিরত হতে পারে সে লক্ষে শিক্ষা কার্যক্রম
+                                    পরিচালনা করা। তাছাড়া যুগের চাহিদানুযায়ী মাদ্রাসায় বিজ্ঞান বিভাগ চালু করা ও
+                                    মাদ্রাসাকে ফাজিল শ্রেণীতে উন্নীত করার পরিকল্পনা রয়েছে।
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div> <!-- /.col-md-8 -->
+            <!--        <div class="container">
+                        <div class="row">-->
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading"><span class="glyphicon glyphicon-list-alt"><b>নোটিস বোর্ড</b></span>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <ul class="demo1 " style="list-style: none">
+                                    <li>
+                                        <table cellpadding="4">
+                                            <tr>
+                                                <td><img src="image/icon_new.gif" width="40" class="img-circle"/></td>
+                                                <td><a href="notice0055.html?id=11">
+                                                    oop </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </li>
+
+                                    <li>
+                                        <table cellpadding="4">
+                                            <tr>
+                                                <td><img src="image/icon_new.gif" width="40" class="img-circle"/></td>
+                                                <td><a href="notice6e03.html?id=13">
+                                                    Salamotia madrasha </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer"></div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                $(function () {
+                    $(".demo1").bootstrapNews({
+                        newsPerPage: 3,
+                        autoplay: true,
+                        pauseOnHover: true,
+                        direction: 'up',
+                        newsTickerInterval: 4000,
+                        onToDo: function () {
+                            //console.log(this);
+                        }
+                    });
+
+
+                });
+            </script>
+            <div class="col-md-4">
+                <div class="widget-main">
+                    <div class="widget-main-title">
+                        <h4 class="widget-title">ছবিঘর</h4>
+                    </div>
+                    <div class="widget-inner">
+                        <div class="gallery-small-thumbs clearfix">
+                            <div class="thumb-small-gallery">
+                                <a class="fancybox" rel="gallery1" href="admin/slider_image/4.jpg"
+                                   title="Gallery Tittle One">
+                                    <img src="admin/slider_image/4.jpg">
+                                </a>
+                            </div>
+                            <div class="thumb-small-gallery">
+                                <a class="fancybox" rel="gallery1" href="admin/slider_image/3.jpg"
+                                   title="Gallery Tittle One">
+                                    <img src="admin/slider_image/3.jpg">
+                                </a>
+                            </div>
+                            <div class="thumb-small-gallery">
+                                <a class="fancybox" rel="gallery1" href="admin/slider_image/2.jpg"
+                                   title="Gallery Tittle One">
+                                    <img src="admin/slider_image/2.jpg">
+                                </a>
+                            </div>
+                            <div class="thumb-small-gallery">
+                                <a class="fancybox" rel="gallery1" href="admin/slider_image/1.jpg"
+                                   title="Gallery Tittle One">
+                                    <img src="admin/slider_image/1.jpg">
+                                </a>
+                            </div>
+
+
+                        </div> <!-- /.galler-small-thumbs -->
+                    </div> <!-- /.widget-inner -->
+                </div> <!-- /.widget-main -->
+            </div>
+            <!-- Here begin Sidebar -->
+
+        </div>
     </div>
-    <button type="submit" class="btn btn-default">Submit</button>
-  </form>
 {% endblock content %}

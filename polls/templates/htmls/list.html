@@ -1,0 +1,33 @@
+{% extends "./base.registration" %}
+{% block content %}
+     {% if messages %}
+  	{% for message in messages %}
+  			{% if message.tags %}
+                <div class="alert alert-{{message.tags }}">{{ message }}</div>
+  			{% endif %}
+  	{% endfor %}
+  {% endif %}
+    <div class="container">
+        <div class="pull-right"><a href="/polls/form" class="btn btn-success">
+            <i class="glyphicon glyphicon-plus	" aria-hidden="true"></i>
+
+            Create</a></div>
+    </div>
+    <table class="table">
+        <thead>
+        <th>Serial</th>
+        <th>Title</th>
+        <th>Description</th>
+        </thead>
+
+        {% for foo in book %}
+            <tr>
+                <td>{{ foo.id }}</td>
+                <td>{{ foo.title }}</td>
+                <td>{{ foo.description }}</td>
+                <td><a href="edit/{{ foo.id }}" class="btn btn-info btn-md">edit</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+
+{% endblock content %}

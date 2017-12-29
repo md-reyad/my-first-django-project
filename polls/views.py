@@ -12,11 +12,11 @@ def hi(request):
 
 def index(request):
     if request.method == 'GET':
-        return render(request, "html/index.html")
+        return render(request, "registration/index.html")
     elif request.method == 'POST':
         title =  request.POST.get('title',"" )
         description = request.POST.get('description',"")
-        b = Book(title=title,description=description)
+        b = Book(title=title, description=description)
         b.save()
         context ={
             'title': title,
@@ -27,8 +27,11 @@ def index(request):
         return redirect('list')
 
 
+
+
+
 def about(r):
-    return render(r, "html/about.html")
+    return render(r, "registration/about.registration")
 
 
 def reyad(r):
@@ -40,7 +43,7 @@ def list(request):
     context={
         'book':book
     }
-    return render(request,"html/list.html",context= context)
+    return render(request,"registration/list.registration",context= context)
 
 
 def edit(request, id):
@@ -48,7 +51,7 @@ def edit(request, id):
     context={
         'book':book
     }
-    return render(request,"html/edit.html",context= context)
+    return render(request,"registration/edit.registration",context= context)
 
 
 def update(request, id):
